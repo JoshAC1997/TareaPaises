@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controladores.Controller">
+   <rowConstraints>
+      <RowConstraints maxHeight="20.0" minHeight="11.0" prefHeight="20.0" />
+      <RowConstraints maxHeight="34.0" minHeight="25.0" prefHeight="25.0" />
+      <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" />
+      <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="25.0" />
+      <RowConstraints maxHeight="31.0" minHeight="5.0" prefHeight="25.0" />
+      <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="28.0" />
+      <RowConstraints maxHeight="25.0" minHeight="9.0" prefHeight="17.0" />
+
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="115.0" minWidth="10.0" prefWidth="108.0" />
+      <ColumnConstraints maxWidth="112.0" minWidth="10.0" prefWidth="112.0" />
+      <ColumnConstraints maxWidth="103.0" minWidth="10.0" prefWidth="86.0" />
+      <ColumnConstraints maxWidth="97.0" minWidth="10.0" prefWidth="94.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="titulo" text="Ciudades por Pais" GridPane.columnSpan="4" GridPane.halignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtPais" onKeyReleased="#buscarPais" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+      <ListView fx:id="lvPaises" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+      <ListView fx:id="lvCiudades" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+      <Label fx:id="error" text="Label" textFill="#ee0000" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Label text="ID" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="Nombre" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="Cod. Pais" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="Poblacion" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label text="Distrito" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="id" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label fx:id="nomC" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label fx:id="codP" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="Pob" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Label fx:id="Dist" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+   </children>
+</GridPane>
